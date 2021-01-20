@@ -1,0 +1,15 @@
+1 차시 : 파이썬 GUI Programming & widget
+2 차시 : widget의 배치 & 꾸미기
+3 차시 : widget3(다이얼로그와 메뉴의 표현 외)
+4 차시 : 제어변수 활용하기
+5 차시 : widget 처리 고급기법
+6 차시 : 파일데이터 위젯에 적재하기
+7 차시 : 이벤트 핸들링(Ⅰ)
+8 차시 : 이벤트 핸들링(Ⅱ)
+9 차시 : 키보드 & 마우스 이벤트
+10 차시 : Mini project
+11 차시 : 데이터분석도구 pandas와 DataFrame
+12 차시 : pandas DataFrame(II) & GUI 연동
+13 차시 : DataFrame & plotting 결과 GUI 연동하기
+
+# 참고도서 : 파이썬 GUI 프로그램밍 쿡북 2/e
