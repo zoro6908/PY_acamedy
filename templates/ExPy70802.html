@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>플라스크 템프릿 예제</title>
+    <meta name="viewport" content="width=device-widthd, initial-scale=1.0">
+    <style type="text/css">
+        .container {
+            max-width: 500px;
+            padding-top: 10px;
+            border:solid 1px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p>My String : {{my_string}}</p>
+        <p>목록 : {{my_list}}</p>
+        <p>리스트 값 출력 : </p>
+            <ul>
+                {% for n in my_list %}
+                <li>{{n}}</li>
+                {% endfor %}
+            </ul>
+    </div>
+</body>
+</html>
