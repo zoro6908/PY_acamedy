@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Macro 객체 속성 테스트</title>
+</head>
+<body>
+  {#- 매크로 선언 -#}
+  {% macro form_input (name, agr1="args1") %}
+    <input type="{{kwargs['type'] or 'text'}}" name="{{name}}" value="{{kwargs['value'] | e or ''}}"
+           size="{{kwargs['size'] or 30}}" class="{{varargs[0]}}">
+  {% endmacro %}
+  {#- 매크로 호출 -#}
+  <ul>
+    <li>Macro name : {{form_input.name}}</li>
+    <li>Macro arguments : {{form_input.arguments}}</li>
+    <li>Macro defaults : {{form_input.v}}</li>
+    <li>Macro catch_kwargs : {{form_input.catch_kwargs}}</li>
+    <li>Macro catch_varargs : {{form_input.catch_varargs}}</li>
+    <li>Macro caller : {{form_input.caller}}</li>
+  </ul>
+</body>
+</html>

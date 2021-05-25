@@ -1,0 +1,1 @@
+{% for color in colors %}{{ color }} {% endfor %}

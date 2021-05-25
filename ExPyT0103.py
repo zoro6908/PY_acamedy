@@ -14,13 +14,14 @@
 
 import requests
 
-res = requests.get('https://www.google.co.kr')
+# res = requests.get('https://www.google.co.kr')
+res = requests.get('http://www.isu.co.kr')
 res.raise_for_status()                         # 에러가 발생되면 에러코드 생성후 프로그램을 끝낸다
-# print('응답코드 : ', res.status_code)            # 200이면 정산
-# if res.status_code == requests.codes.ok:
-#     print('정상입니다')
-# else:
-#     print('오류가 발생했습니다. [에러코드 ', res.status_code, ']')
+print('응답코드 : ', res.status_code)            # 200이면 정산
+if res.status_code == requests.codes.ok:
+    print('정상입니다')
+else:
+    print('오류가 발생했습니다. [에러코드 ', res.status_code, ']')
 
 print(len(res.text))
 print(res.text)

@@ -1,0 +1,1 @@
+{{data.name}} 의 연봉은 {{data.salary}} 입니다.
